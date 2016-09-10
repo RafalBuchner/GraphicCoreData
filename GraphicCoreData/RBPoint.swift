@@ -11,7 +11,7 @@ import CoreData
 import Cocoa
 
 class RBPoint: NSManagedObject {
-
+    let sizeOfPoints: CGFloat = 10
 // Insert code here to add functionality to your managed object subclass
     class func create(point: NSPoint, context: NSManagedObjectContext) -> RBPoint {
         
@@ -22,7 +22,23 @@ class RBPoint: NSManagedObject {
         return newPoint
     }
 
-    
+    func draw() {
+        // Draws Point on screen
+        /// edit: wiem co się chrzani. mój custom view nie jest zerowym punktem odniesienia dla eventów, także dodałem współczynnik "- 20" do koordyntów xCor oraz yCor, na dniach zobacze jak to można ominąć, by działało po bożemu
+
+        RBColor.PointColor.set()
+        let xCor = CGFloat(self.x!) - sizeOfPoints/2 - 20.0
+        let yCor = CGFloat(self.y!) - sizeOfPoints/2 - 20.0
+        
+        let rect = NSRect(origin: NSPoint(x: xCor, y: yCor), size: CGSize(width: sizeOfPoints, height: sizeOfPoints))
+        let circle = NSBezierPath(roundedRect: rect, xRadius: sizeOfPoints/2, yRadius: sizeOfPoints/2)
+        
+        circle.lineWidth = RBDrawing.PointWidth
+        circle.stroke()
+        RBColor.BackgroundColor.set()
+        circle.fill()
+
+    }
     override func prepareForDeletion() {
          print("Entity \(self.objectID) has been deleted")
     }

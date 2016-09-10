@@ -22,7 +22,7 @@ class ViewController: NSViewController {
         print("Program started with following number of entities in CoreData: \(manageContext!.registeredObjects.count)") //TEST
     }
     override func viewWillDisappear() {
-        print("\n***********\nOn the end:\n***********\n<deleting process...>\n") //TEST
+        print("\n\t  ***************\t\n\t    On the end:\t\n\t  ***************\t\n\t<deleting process...>\t\n") //TEST
         print("number of entities in CoreData: \(manageContext!.registeredObjects.count)\n") //TEST
         /// RB: na wszelki wypadek wszystko usówam pod koniec działania ViewController. Wynika to z paru potyczek, które miałem wcześniej. Muszę jeszcze rozkminić lepiej kontrolę nad danymi
         for point:RBPoint in (pointArrayController.arrangedObjects as? [RBPoint])! {
