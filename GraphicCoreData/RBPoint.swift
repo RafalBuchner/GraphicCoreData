@@ -26,4 +26,24 @@ class RBPoint: NSManagedObject {
     override func prepareForDeletion() {
          print("Entity \(self.objectID) has been deleted")
     }
+    
+    // nie wie, czy to nie powinno być w jakims ObjectController. Ale tu jest bardziej czytelne niż we View
+    
+    func draw() {
+        NSColor.init(red: 0, green: 0, blue: 0, alpha: 0.3).set() /// zrobiłem kolor dla punktów półprzeźroczysty aby na wszelki wypadek sprawdzić, czy przypadkiem następująca pętla czegoś nie psuje
+        let sizeOfPoints: CGFloat = 10
+        
+
+        
+        let xCor = CGFloat(self.x!) - sizeOfPoints/2 - 20.0
+        let yCor = CGFloat(self.y!) - sizeOfPoints/2 - 20.0
+        
+        
+        let rect = NSRect(origin: NSPoint(x: xCor, y: yCor), size: CGSize(width: sizeOfPoints, height: sizeOfPoints))
+        let circle = NSBezierPath(roundedRect: rect, xRadius: sizeOfPoints/2, yRadius: sizeOfPoints/2)
+        circle.lineWidth = 2
+        //            circle.stroke()
+        //            backgroundColor.set()
+        circle.fill()
+    }
 }
