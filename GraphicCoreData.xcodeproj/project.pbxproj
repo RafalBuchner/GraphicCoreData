@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		760672891D81A5640042F2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672881D81A5640042F2F7 /* AppDelegate.swift */; };
+		7606728B1D81A5640042F2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606728A1D81A5640042F2F7 /* ViewController.swift */; };
+		7606728E1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7606728C1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld */; };
+		760672901D81A5640042F2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7606728F1D81A5640042F2F7 /* Assets.xcassets */; };
+		760672931D81A5640042F2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760672911D81A5640042F2F7 /* Main.storyboard */; };
+		7606729E1D81A5650042F2F7 /* GraphicCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606729D1D81A5650042F2F7 /* GraphicCoreDataTests.swift */; };
+		760672A91D81A5650042F2F7 /* GraphicCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672A81D81A5650042F2F7 /* GraphicCoreDataUITests.swift */; };
+		760672B81D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672B61D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift */; };
+		760672B91D81A5AE0042F2F7 /* RBPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672B71D81A5AE0042F2F7 /* RBPoint.swift */; };
+		760672BE1D81A6A30042F2F7 /* RBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672BD1D81A6A30042F2F7 /* RBView.swift */; };
+		760672C01D81B1900042F2F7 /* RBPointArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672BF1D81B1900042F2F7 /* RBPointArrayController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7606729A1D81A5650042F2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7606727D1D81A5640042F2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760672841D81A5640042F2F7;
+			remoteInfo = GraphicCoreData;
+		};
+		760672A51D81A5650042F2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7606727D1D81A5640042F2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760672841D81A5640042F2F7;
+			remoteInfo = GraphicCoreData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		760672851D81A5640042F2F7 /* GraphicCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		760672881D81A5640042F2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7606728A1D81A5640042F2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7606728D1D81A5640042F2F7 /* GraphicCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GraphicCoreData.xcdatamodel; sourceTree = "<group>"; };
+		7606728F1D81A5640042F2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		760672921D81A5640042F2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		760672941D81A5640042F2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760672991D81A5650042F2F7 /* GraphicCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphicCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7606729D1D81A5650042F2F7 /* GraphicCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicCoreDataTests.swift; sourceTree = "<group>"; };
+		7606729F1D81A5650042F2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760672A41D81A5650042F2F7 /* GraphicCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphicCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		760672A81D81A5650042F2F7 /* GraphicCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicCoreDataUITests.swift; sourceTree = "<group>"; };
+		760672AA1D81A5650042F2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760672B61D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RBPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		760672B71D81A5AE0042F2F7 /* RBPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBPoint.swift; sourceTree = "<group>"; };
+		760672BD1D81A6A30042F2F7 /* RBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBView.swift; sourceTree = "<group>"; };
+		760672BF1D81B1900042F2F7 /* RBPointArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBPointArrayController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		760672821D81A5640042F2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760672961D81A5650042F2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760672A11D81A5650042F2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7606727C1D81A5640042F2F7 = {
+			isa = PBXGroup;
+			children = (
+				760672871D81A5640042F2F7 /* GraphicCoreData */,
+				7606729C1D81A5650042F2F7 /* GraphicCoreDataTests */,
+				760672A71D81A5650042F2F7 /* GraphicCoreDataUITests */,
+				760672861D81A5640042F2F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		760672861D81A5640042F2F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				760672851D81A5640042F2F7 /* GraphicCoreData.app */,
+				760672991D81A5650042F2F7 /* GraphicCoreDataTests.xctest */,
+				760672A41D81A5650042F2F7 /* GraphicCoreDataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		760672871D81A5640042F2F7 /* GraphicCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				760672BD1D81A6A30042F2F7 /* RBView.swift */,
+				760672881D81A5640042F2F7 /* AppDelegate.swift */,
+				7606728A1D81A5640042F2F7 /* ViewController.swift */,
+				7606728F1D81A5640042F2F7 /* Assets.xcassets */,
+				760672911D81A5640042F2F7 /* Main.storyboard */,
+				760672BF1D81B1900042F2F7 /* RBPointArrayController.swift */,
+				760672941D81A5640042F2F7 /* Info.plist */,
+				7606728C1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld */,
+				760672BA1D81A5B90042F2F7 /* CoreData */,
+			);
+			path = GraphicCoreData;
+			sourceTree = "<group>";
+		};
+		7606729C1D81A5650042F2F7 /* GraphicCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				7606729D1D81A5650042F2F7 /* GraphicCoreDataTests.swift */,
+				7606729F1D81A5650042F2F7 /* Info.plist */,
+			);
+			path = GraphicCoreDataTests;
+			sourceTree = "<group>";
+		};
+		760672A71D81A5650042F2F7 /* GraphicCoreDataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				760672A81D81A5650042F2F7 /* GraphicCoreDataUITests.swift */,
+				760672AA1D81A5650042F2F7 /* Info.plist */,
+			);
+			path = GraphicCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		760672BA1D81A5B90042F2F7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				760672B61D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift */,
+				760672B71D81A5AE0042F2F7 /* RBPoint.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		760672841D81A5640042F2F7 /* GraphicCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760672AD1D81A5650042F2F7 /* Build configuration list for PBXNativeTarget "GraphicCoreData" */;
+			buildPhases = (
+				760672811D81A5640042F2F7 /* Sources */,
+				760672821D81A5640042F2F7 /* Frameworks */,
+				760672831D81A5640042F2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphicCoreData;
+			productName = GraphicCoreData;
+			productReference = 760672851D81A5640042F2F7 /* GraphicCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		760672981D81A5650042F2F7 /* GraphicCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760672B01D81A5650042F2F7 /* Build configuration list for PBXNativeTarget "GraphicCoreDataTests" */;
+			buildPhases = (
+				760672951D81A5650042F2F7 /* Sources */,
+				760672961D81A5650042F2F7 /* Frameworks */,
+				760672971D81A5650042F2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7606729B1D81A5650042F2F7 /* PBXTargetDependency */,
+			);
+			name = GraphicCoreDataTests;
+			productName = GraphicCoreDataTests;
+			productReference = 760672991D81A5650042F2F7 /* GraphicCoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		760672A31D81A5650042F2F7 /* GraphicCoreDataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760672B31D81A5650042F2F7 /* Build configuration list for PBXNativeTarget "GraphicCoreDataUITests" */;
+			buildPhases = (
+				760672A01D81A5650042F2F7 /* Sources */,
+				760672A11D81A5650042F2F7 /* Frameworks */,
+				760672A21D81A5650042F2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				760672A61D81A5650042F2F7 /* PBXTargetDependency */,
+			);
+			name = GraphicCoreDataUITests;
+			productName = GraphicCoreDataUITests;
+			productReference = 760672A41D81A5650042F2F7 /* GraphicCoreDataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7606727D1D81A5640042F2F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rafal Buchner";
+				TargetAttributes = {
+					760672841D81A5640042F2F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					760672981D81A5650042F2F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 760672841D81A5640042F2F7;
+					};
+					760672A31D81A5650042F2F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 760672841D81A5640042F2F7;
+					};
+				};
+			};
+			buildConfigurationList = 760672801D81A5640042F2F7 /* Build configuration list for PBXProject "GraphicCoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7606727C1D81A5640042F2F7;
+			productRefGroup = 760672861D81A5640042F2F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				760672841D81A5640042F2F7 /* GraphicCoreData */,
+				760672981D81A5650042F2F7 /* GraphicCoreDataTests */,
+				760672A31D81A5650042F2F7 /* GraphicCoreDataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		760672831D81A5640042F2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760672901D81A5640042F2F7 /* Assets.xcassets in Resources */,
+				760672931D81A5640042F2F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760672971D81A5650042F2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760672A21D81A5650042F2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		760672811D81A5640042F2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760672B81D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift in Sources */,
+				7606728E1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld in Sources */,
+				760672C01D81B1900042F2F7 /* RBPointArrayController.swift in Sources */,
+				760672BE1D81A6A30042F2F7 /* RBView.swift in Sources */,
+				7606728B1D81A5640042F2F7 /* ViewController.swift in Sources */,
+				760672891D81A5640042F2F7 /* AppDelegate.swift in Sources */,
+				760672B91D81A5AE0042F2F7 /* RBPoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760672951D81A5650042F2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7606729E1D81A5650042F2F7 /* GraphicCoreDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760672A01D81A5650042F2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760672A91D81A5650042F2F7 /* GraphicCoreDataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7606729B1D81A5650042F2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 760672841D81A5640042F2F7 /* GraphicCoreData */;
+			targetProxy = 7606729A1D81A5650042F2F7 /* PBXContainerItemProxy */;
+		};
+		760672A61D81A5650042F2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 760672841D81A5640042F2F7 /* GraphicCoreData */;
+			targetProxy = 760672A51D81A5650042F2F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		760672911D81A5640042F2F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760672921D81A5640042F2F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		760672AB1D81A5650042F2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		760672AC1D81A5650042F2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		760672AE1D81A5650042F2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GraphicCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BuchnerRafal.GraphicCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		760672AF1D81A5650042F2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GraphicCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BuchnerRafal.GraphicCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		760672B11D81A5650042F2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GraphicCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BuchnerRafal.GraphicCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphicCoreData.app/Contents/MacOS/GraphicCoreData";
+			};
+			name = Debug;
+		};
+		760672B21D81A5650042F2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GraphicCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BuchnerRafal.GraphicCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphicCoreData.app/Contents/MacOS/GraphicCoreData";
+			};
+			name = Release;
+		};
+		760672B41D81A5650042F2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GraphicCoreDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BuchnerRafal.GraphicCoreDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GraphicCoreData;
+			};
+			name = Debug;
+		};
+		760672B51D81A5650042F2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GraphicCoreDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BuchnerRafal.GraphicCoreDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GraphicCoreData;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		760672801D81A5640042F2F7 /* Build configuration list for PBXProject "GraphicCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760672AB1D81A5650042F2F7 /* Debug */,
+				760672AC1D81A5650042F2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760672AD1D81A5650042F2F7 /* Build configuration list for PBXNativeTarget "GraphicCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760672AE1D81A5650042F2F7 /* Debug */,
+				760672AF1D81A5650042F2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760672B01D81A5650042F2F7 /* Build configuration list for PBXNativeTarget "GraphicCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760672B11D81A5650042F2F7 /* Debug */,
+				760672B21D81A5650042F2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760672B31D81A5650042F2F7 /* Build configuration list for PBXNativeTarget "GraphicCoreDataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760672B41D81A5650042F2F7 /* Debug */,
+				760672B51D81A5650042F2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7606728C1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7606728D1D81A5640042F2F7 /* GraphicCoreData.xcdatamodel */,
+			);
+			currentVersion = 7606728D1D81A5640042F2F7 /* GraphicCoreData.xcdatamodel */;
+			path = GraphicCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7606727D1D81A5640042F2F7 /* Project object */;
+}
