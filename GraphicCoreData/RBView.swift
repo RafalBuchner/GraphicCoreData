@@ -19,7 +19,7 @@ class RBView: NSView {
     var mouseDraggedByUser: Bool = false
     
     var manageContext: NSManagedObjectContext? = (NSApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
-    var pointArrayController: NSArrayController = NSArrayController() ///zmienna, dzięki której można przenieść RBPointArrayController z ViewController do RBView
+    var pointArrayController: RBPointArrayController = RBPointArrayController() ///zmienna, dzięki której można przenieść RBPointArrayController z ViewController do RBView
 
     
     override func mouseDown(theEvent : NSEvent) {
@@ -41,16 +41,8 @@ class RBView: NSView {
         RBColor.BackgroundColor.set()
         NSRectFill(dirtyRect)
         
-        
-        /// RB: rysujemy wszystkie punkty (potem przeniose zawartość tej pętli do klasy RBPoint
-        /// niestety coś się tu, albo w mouseDown chrzani i rysuje punkt nie tam, gdzie trzeba
-        /// edit: wiem co się chrzani. mój custom view nie jest zerowym punktem odniesienia dla eventów, także dodałem współczynnik "- 20" do koordyntów xCor oraz yCor, na dniach zobacze jak to można ominąć, by działało po bożemu
-        for point:RBPoint in (pointArrayController.arrangedObjects as? [RBPoint])! {
-            
-            point.draw()
-
-
-        }
+        /// RB: rysujemy wszystkie punkty z poziomu klasy RBPointArrayController
+        pointArrayController.draw()
     }
     
 }

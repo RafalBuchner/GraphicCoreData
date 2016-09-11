@@ -2,7 +2,7 @@
 //  RBPoint+CoreDataProperties.swift
 //  GraphicCoreData
 //
-//  Created by Rafal Buchner on 08.09.2016.
+//  Created by Rafal Buchner on 11.09.2016.
 //  Copyright © 2016 Rafal Buchner. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,8 +14,9 @@ import CoreData
 
 extension RBPoint {
 
+    @NSManaged var selected: NSNumber?
     @NSManaged var x: NSNumber?
     @NSManaged var y: NSNumber?
-    @NSManaged var selected: NSNumber?
+//    @NSManaged var element: RBElement?
 
 }

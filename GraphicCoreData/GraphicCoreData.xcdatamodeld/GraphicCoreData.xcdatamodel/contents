@@ -6,6 +6,6 @@
         <attribute name="y" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="RBPoint" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="RBPoint" positionX="-281" positionY="90" width="128" height="88"/>
     </elements>
 </model>

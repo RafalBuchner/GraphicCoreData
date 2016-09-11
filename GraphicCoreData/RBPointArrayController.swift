@@ -7,7 +7,14 @@
 //
 
 import Cocoa
+import CoreData
 
 class RBPointArrayController: NSArrayController {
+    func draw() {
+        for point:RBPoint in (self.arrangedObjects as? [RBPoint])! {
 
+            point.draw()
+            
+        }
+    }
 }

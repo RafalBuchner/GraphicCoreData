@@ -24,6 +24,7 @@ class RBPoint: NSManagedObject {
 
     func draw() {
         // Draws Point on screen
+        /// niestety coś się tu chrzani i rysuje punkt nie tam, gdzie trzeba
         /// edit: wiem co się chrzani. mój custom view nie jest zerowym punktem odniesienia dla eventów, także dodałem współczynnik "- 20" do koordyntów xCor oraz yCor, na dniach zobacze jak to można ominąć, by działało po bożemu
 
         RBColor.PointColor.set()
@@ -35,8 +36,8 @@ class RBPoint: NSManagedObject {
         
         circle.lineWidth = RBDrawing.PointWidth
         circle.stroke()
-        RBColor.BackgroundColor.set()
-        circle.fill()
+//        RBColor.BackgroundColor.set()
+//        circle.fill()
 
     }
     override func prepareForDeletion() {

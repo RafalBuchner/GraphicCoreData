@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		760672891D81A5640042F2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672881D81A5640042F2F7 /* AppDelegate.swift */; };
-		7606728B1D81A5640042F2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606728A1D81A5640042F2F7 /* ViewController.swift */; };
+		7606728B1D81A5640042F2F7 /* RBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606728A1D81A5640042F2F7 /* RBViewController.swift */; };
 		7606728E1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7606728C1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld */; };
 		760672901D81A5640042F2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7606728F1D81A5640042F2F7 /* Assets.xcassets */; };
 		760672931D81A5640042F2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760672911D81A5640042F2F7 /* Main.storyboard */; };
 		7606729E1D81A5650042F2F7 /* GraphicCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606729D1D81A5650042F2F7 /* GraphicCoreDataTests.swift */; };
 		760672A91D81A5650042F2F7 /* GraphicCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672A81D81A5650042F2F7 /* GraphicCoreDataUITests.swift */; };
-		760672B81D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672B61D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift */; };
 		760672B91D81A5AE0042F2F7 /* RBPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672B71D81A5AE0042F2F7 /* RBPoint.swift */; };
 		760672BE1D81A6A30042F2F7 /* RBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672BD1D81A6A30042F2F7 /* RBView.swift */; };
 		760672C01D81B1900042F2F7 /* RBPointArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760672BF1D81B1900042F2F7 /* RBPointArrayController.swift */; };
 		769E629F1D84987200635711 /* RBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E629E1D84987200635711 /* RBColor.swift */; };
 		769E62A11D849B4000635711 /* RBDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E62A01D849B4000635711 /* RBDrawing.swift */; };
+		769E62AA1D8591C100635711 /* RBPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E62A91D8591C100635711 /* RBPoint+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		760672851D81A5640042F2F7 /* GraphicCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		760672881D81A5640042F2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7606728A1D81A5640042F2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7606728A1D81A5640042F2F7 /* RBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBViewController.swift; sourceTree = "<group>"; };
 		7606728D1D81A5640042F2F7 /* GraphicCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GraphicCoreData.xcdatamodel; sourceTree = "<group>"; };
 		7606728F1D81A5640042F2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		760672921D81A5640042F2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,12 +53,12 @@
 		760672A41D81A5650042F2F7 /* GraphicCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphicCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		760672A81D81A5650042F2F7 /* GraphicCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicCoreDataUITests.swift; sourceTree = "<group>"; };
 		760672AA1D81A5650042F2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		760672B61D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RBPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		760672B71D81A5AE0042F2F7 /* RBPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBPoint.swift; sourceTree = "<group>"; };
 		760672BD1D81A6A30042F2F7 /* RBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBView.swift; sourceTree = "<group>"; };
 		760672BF1D81B1900042F2F7 /* RBPointArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBPointArrayController.swift; sourceTree = "<group>"; };
 		769E629E1D84987200635711 /* RBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBColor.swift; sourceTree = "<group>"; };
 		769E62A01D849B4000635711 /* RBDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBDrawing.swift; sourceTree = "<group>"; };
+		769E62A91D8591C100635711 /* RBPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RBPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				760672BD1D81A6A30042F2F7 /* RBView.swift */,
-				7606728A1D81A5640042F2F7 /* ViewController.swift */,
+				7606728A1D81A5640042F2F7 /* RBViewController.swift */,
 				760672BF1D81B1900042F2F7 /* RBPointArrayController.swift */,
 				7606728F1D81A5640042F2F7 /* Assets.xcassets */,
 				760672911D81A5640042F2F7 /* Main.storyboard */,
@@ -143,7 +143,7 @@
 		760672BA1D81A5B90042F2F7 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				760672B61D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift */,
+				769E62A91D8591C100635711 /* RBPoint+CoreDataProperties.swift */,
 				760672B71D81A5AE0042F2F7 /* RBPoint.swift */,
 			);
 			name = CoreData;
@@ -297,12 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				760672B81D81A5AE0042F2F7 /* RBPoint+CoreDataProperties.swift in Sources */,
 				7606728E1D81A5640042F2F7 /* GraphicCoreData.xcdatamodeld in Sources */,
 				760672C01D81B1900042F2F7 /* RBPointArrayController.swift in Sources */,
 				769E629F1D84987200635711 /* RBColor.swift in Sources */,
+				769E62AA1D8591C100635711 /* RBPoint+CoreDataProperties.swift in Sources */,
 				760672BE1D81A6A30042F2F7 /* RBView.swift in Sources */,
-				7606728B1D81A5640042F2F7 /* ViewController.swift in Sources */,
+				7606728B1D81A5640042F2F7 /* RBViewController.swift in Sources */,
 				760672891D81A5640042F2F7 /* AppDelegate.swift in Sources */,
 				760672B91D81A5AE0042F2F7 /* RBPoint.swift in Sources */,
 				769E62A11D849B4000635711 /* RBDrawing.swift in Sources */,

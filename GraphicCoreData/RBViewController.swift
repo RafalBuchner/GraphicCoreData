@@ -10,7 +10,7 @@ import Cocoa
 import Darwin
 import CoreData
 
-class ViewController: NSViewController {
+class RBViewController: NSViewController {
     
     @IBOutlet weak var editView: RBView!
     @IBOutlet var pointArrayController: NSArrayController!
@@ -18,7 +18,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        editView.pointArrayController = pointArrayController
+        editView.pointArrayController = pointArrayController as! RBPointArrayController
         print("Program started with following number of entities in CoreData: \(manageContext!.registeredObjects.count)") //TEST
     }
     override func viewWillDisappear() {

@@ -10,5 +10,5 @@ import Foundation
 
 struct RBDrawing {
     static var PointWidth: CGFloat = LineWidth + LineWidth / 3
-    static var LineWidth: CGFloat = 5
+    static var LineWidth: CGFloat = 2
 }
