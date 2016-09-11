@@ -22,12 +22,12 @@ class RBPoint: NSManagedObject {
         return newPoint
     }
 
-    func draw() {
+    func draw(color: NSColor = RBColor.PointColor) {
         // Draws Point on screen
         /// niestety coś się tu chrzani i rysuje punkt nie tam, gdzie trzeba
         /// edit: wiem co się chrzani. mój custom view nie jest zerowym punktem odniesienia dla eventów, także dodałem współczynnik "- 20" do koordyntów xCor oraz yCor, na dniach zobacze jak to można ominąć, by działało po bożemu
 
-        RBColor.PointColor.set()
+        color.set()
         let xCor = CGFloat(self.x!) - sizeOfPoints/2 - 20.0
         let yCor = CGFloat(self.y!) - sizeOfPoints/2 - 20.0
         

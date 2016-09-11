@@ -8,15 +8,21 @@
 
 import Cocoa
 
+/**
+    w tej klasie będą wrzucane wszelkie informacje do coreDaty biorące się z eventów. Np tworzenie punktów.
+    Będzie to klasa, z której zostają dane wysyłane do coreDaty. W klasie RBView dane coreDaty będą pobierane, w celu ich wyrysowania, z poziomu ArrayControllerów.
+ **/
 
 class RBScrollView: NSScrollView {
     
-    var mouseLoc: NSPoint = NSPoint()
+    lazy var mouseLoc: NSPoint = NSPoint()
 //    var mouseLocDown: NSPoint = NSPoint()
 //    var mouseClickedByUser: Bool = false
 //    var mouseDraggedByUser: Bool = false
+    var manageContext: NSManagedObjectContext? = (NSApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
     override func mouseDown(theEvent : NSEvent) {
         mouseLoc = theEvent.locationInWindow
+        RBPoint.create(mouseLoc, context: manageContext!) /// RB: Wrzuca
         Swift.print(mouseLoc) //TEST
         self.needsDisplay = true
         
@@ -25,8 +31,6 @@ class RBScrollView: NSScrollView {
     
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
-
-        // Drawing code here.
     }
     
 }

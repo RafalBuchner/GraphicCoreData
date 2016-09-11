@@ -13,6 +13,7 @@ import CoreData
 class RBViewController: NSViewController {
     
 
+    @IBOutlet weak var scrollView: RBScrollView!
     @IBOutlet weak var editView: RBView!
     @IBOutlet var pointArrayController: NSArrayController!
     var manageContext: NSManagedObjectContext? = (NSApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
@@ -22,10 +23,17 @@ class RBViewController: NSViewController {
         editView.pointArrayController = pointArrayController as! RBPointArrayController
         print("Program started with following number of entities in CoreData: \(manageContext!.registeredObjects.count)") //TEST
     }
+    
     override func viewWillDisappear() {
         print("\n\t  ***************\t\n\t    On the end:\t\n\t  ***************\t\n\t<deleting process...>\t\n") //TEST
         print("number of entities in CoreData: \(manageContext!.registeredObjects.count)\n") //TEST
-        /// RB: na wszelki wypadek wszystko usówam pod koniec działania ViewController. Wynika to z paru potyczek, które miałem wcześniej. Muszę jeszcze rozkminić lepiej kontrolę nad danymi
+        
+        
+        /** 
+         RB: na wszelki wypadek wszystko usówam pod koniec działania ViewController. 
+         Wynika to z paru potyczek, które miałem wcześniej. 
+         Muszę jeszcze rozkminić lepiej kontrolę nad danymi
+        **/
         for point:RBPoint in (pointArrayController.arrangedObjects as? [RBPoint])! {
             
             manageContext?.deleteObject(point as NSManagedObject)
