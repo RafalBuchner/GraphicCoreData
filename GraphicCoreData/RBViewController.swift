@@ -12,6 +12,7 @@ import CoreData
 
 class RBViewController: NSViewController {
     
+
     @IBOutlet weak var editView: RBView!
     @IBOutlet var pointArrayController: NSArrayController!
     var manageContext: NSManagedObjectContext? = (NSApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext

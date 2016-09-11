@@ -36,8 +36,6 @@ class RBPoint: NSManagedObject {
         
         circle.lineWidth = RBDrawing.PointWidth
         circle.stroke()
-//        RBColor.BackgroundColor.set()
-//        circle.fill()
 
     }
     override func prepareForDeletion() {

@@ -11,32 +11,30 @@ import Darwin
 import CoreData
 
 class RBView: NSView {
-    
-   
-    var mouseLoc: NSPoint = NSPoint()
-    var mouseLocDown: NSPoint = NSPoint()
-    var mouseClickedByUser: Bool = false
-    var mouseDraggedByUser: Bool = false
+    lazy var mouseLoc: NSPoint = NSPoint()
     
     var manageContext: NSManagedObjectContext? = (NSApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
     var pointArrayController: RBPointArrayController = RBPointArrayController() ///zmienna, dzięki której można przenieść RBPointArrayController z ViewController do RBView
-
     
     override func mouseDown(theEvent : NSEvent) {
         mouseLoc = theEvent.locationInWindow
-        Swift.print(mouseLoc) //TEST
-
+        Swift.print(mouseLoc)
         RBPoint.create(mouseLoc, context: manageContext!) /// RB: Wrzuca RBPoint do manageContextu
         Swift.print(manageContext!.registeredObjects.count) ///TEST RB: Podczas kliknięcia, pokazuje ilość instancji w manageContext
         self.needsDisplay = true
         
     }
     
-
+    override func awakeFromNib() {
+        Swift.print(">>> RBView: awaken")
+        Swift.print(">>> Superview: \(superview!.superview!.className)")
+    }
+    
+    
     
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
-
+        
         /// RB: rysuje tło
         RBColor.BackgroundColor.set()
         NSRectFill(dirtyRect)
