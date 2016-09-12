@@ -13,9 +13,11 @@ import CoreData
 class RBViewController: NSViewController {
     
 
+    @IBOutlet var point: RBPoint!
     @IBOutlet weak var scrollView: RBScrollView!
     @IBOutlet weak var editView: RBView!
     @IBOutlet var pointArrayController: NSArrayController!
+    
     var manageContext: NSManagedObjectContext? = (NSApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
     
     override func viewDidLoad() {
@@ -27,7 +29,7 @@ class RBViewController: NSViewController {
     override func viewWillDisappear() {
         print("\n\t  ***************\t\n\t    On the end:\t\n\t  ***************\t\n\t<deleting process...>\t\n") //TEST
         print("number of entities in CoreData: \(manageContext!.registeredObjects.count)\n") //TEST
-        
+        print("visRect\(editView.visibleRect.origin)")
         
         /** 
          RB: na wszelki wypadek wszystko usówam pod koniec działania ViewController. 

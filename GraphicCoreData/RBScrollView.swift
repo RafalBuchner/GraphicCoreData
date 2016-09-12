@@ -14,18 +14,22 @@ import Cocoa
  **/
 
 class RBScrollView: NSScrollView {
-    
     lazy var mouseLoc: NSPoint = NSPoint()
-//    var mouseLocDown: NSPoint = NSPoint()
-//    var mouseClickedByUser: Bool = false
-//    var mouseDraggedByUser: Bool = false
+
     var manageContext: NSManagedObjectContext? = (NSApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
     override func mouseDown(theEvent : NSEvent) {
-        mouseLoc = theEvent.locationInWindow
-        RBPoint.create(mouseLoc, context: manageContext!) /// RB: Wrzuca
-        Swift.print(mouseLoc) //TEST
-        self.needsDisplay = true
         
+        mouseLoc = theEvent.locationInWindow
+        var mouseLocInRBViewBounds = NSPoint()
+        let editViewOrigin = subviews[0].subviews[0].visibleRect.origin
+        
+        mouseLocInRBViewBounds.x = mouseLoc.x + editViewOrigin.x // jak przenieść tą sumę do RBPoint.create ? Przez outlety mi nie wychodzi
+        mouseLocInRBViewBounds.y = mouseLoc.y + editViewOrigin.y
+        
+        RBPoint.create(mouseLocInRBViewBounds, context: manageContext!) /// RB: Wrzuca
+        Swift.print(mouseLocInRBViewBounds) //TEST
+        self.needsDisplay = true
+        Swift.print("editView origin: \(subviews[0].subviews[0].visibleRect.origin)")
     }
    
     

@@ -679,7 +679,7 @@
                                     <rect key="frame" x="1" y="1" width="809" height="628"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <view misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ac6-JL-QWP" userLabel="RBView" customClass="RBView" customModule="GraphicCoreData" customModuleProvider="target">
+                                        <view misplaced="YES" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="ac6-JL-QWP" userLabel="RBView" customClass="RBView" customModule="GraphicCoreData" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="1296" height="949"/>
                                         </view>
                                     </subviews>
@@ -690,11 +690,11 @@
                                         <constraint firstItem="ac6-JL-QWP" firstAttribute="leading" secondItem="p9H-pF-e9J" secondAttribute="leading" constant="-1" id="taF-Hr-VNs"/>
                                     </constraints>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.0030800821355236141" horizontal="YES" id="CZ5-iN-xbN">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="CZ5-iN-xbN">
                                     <rect key="frame" x="1" y="613" width="809" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="GjI-l2-tRI">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.99376947040498442" horizontal="NO" id="GjI-l2-tRI">
                                     <rect key="frame" x="794" y="1" width="16" height="628"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -709,6 +709,7 @@
                     </view>
                     <connections>
                         <outlet property="editView" destination="ac6-JL-QWP" id="baI-2P-8GK"/>
+                        <outlet property="point" destination="j9y-c4-zsi" id="xkI-WR-FgD"/>
                         <outlet property="pointArrayController" destination="jhM-cS-hUr" id="eU0-2U-S2h"/>
                         <outlet property="scrollView" destination="cmh-eb-Ix4" id="hWN-hB-QRZ"/>
                     </connections>
@@ -720,6 +721,7 @@
                     </connections>
                 </arrayController>
                 <userDefaultsController representsSharedInstance="YES" id="IIA-7B-mgD"/>
+                <customObject id="j9y-c4-zsi" customClass="RBPoint" customModule="GraphicCoreData" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="268.5" y="1001"/>
         </scene>

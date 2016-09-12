@@ -13,13 +13,14 @@ struct RBDrawing {
     static var PointWidth: CGFloat = LineWidth + LineWidth / 3
     static var LineWidth: CGFloat = 2
     
-    func zeroAxis(zeroXY: NSPoint) {
-        let length: CGFloat = 5
+    func zeroAxis(zeroXY:(width:Float, height:Float)) {
+        let length: Float = 5
+        
         NSColor.redColor().set() ////////ustaw w settings
-        let leftPoint   = NSPoint(x: zeroXY.x - length, y: zeroXY.y         )
-        let rightPoint  = NSPoint(x: zeroXY.x + length, y: zeroXY.y         )
-        let topPoint    = NSPoint(x: zeroXY.x,          y: zeroXY.y + length)
-        let bottomPoint = NSPoint(x: zeroXY.x,          y: zeroXY.y - length)
+        let leftPoint   = NSPoint(x: CGFloat(zeroXY.width - length), y: CGFloat(zeroXY.height)         )
+        let rightPoint  = NSPoint(x: CGFloat(zeroXY.width + length), y: CGFloat(zeroXY.height)         )
+        let topPoint    = NSPoint(x: CGFloat(zeroXY.width),          y: CGFloat(zeroXY.height + length))
+        let bottomPoint = NSPoint(x: CGFloat(zeroXY.width),          y: CGFloat(zeroXY.height - length))
         let xLine = NSBezierPath()
         xLine.moveToPoint(leftPoint)
         xLine.lineToPoint(rightPoint)

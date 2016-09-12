@@ -11,14 +11,14 @@ import Darwin
 import CoreData
 
 class RBView: NSView {
-    var zeroXY = NSPoint(x: 200,y: 300)
-    
+    var zeroXY:(width:Float, height:Float) = (0, 0)
     var pointArrayController: RBPointArrayController = RBPointArrayController() ///zmienna, dzięki której można przenieść RBPointArrayController z ViewController do RBView
     
     override func awakeFromNib() {
         Swift.print(">>> RBView: awaken")
         Swift.print(">>> Superview: \(superview!.superview!.className)")
     }
+    
     
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
@@ -30,6 +30,9 @@ class RBView: NSView {
         
         /// RB: rysujemy wszystkie punkty z poziomu klasy RBPointArrayController
         pointArrayController.draw()
+        
+//        Swift.print("\(self.visibleRect)")
+
     }
     
 }
