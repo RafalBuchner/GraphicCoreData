@@ -21,9 +21,11 @@ class RBScrollView: NSScrollView {
         
         mouseLoc = theEvent.locationInWindow
         var mouseLocInRBViewBounds = NSPoint()
-        let editViewOrigin = subviews[0].subviews[0].visibleRect.origin
         
-        mouseLocInRBViewBounds.x = mouseLoc.x + editViewOrigin.x // jak przenieść tą sumę do RBPoint.create ? Przez outlety mi nie wychodzi
+        //Rysowanie poza defaultowym widokiem :
+        // jak przenieść tą sumę do RBPoint.create ? Przez outlety mi nie wychodzi
+        let editViewOrigin = subviews[0].subviews[0].visibleRect.origin
+        mouseLocInRBViewBounds.x = mouseLoc.x + editViewOrigin.x
         mouseLocInRBViewBounds.y = mouseLoc.y + editViewOrigin.y
         
         RBPoint.create(mouseLocInRBViewBounds, context: manageContext!) /// RB: Wrzuca
